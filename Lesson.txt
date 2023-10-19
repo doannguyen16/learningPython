@@ -1,0 +1,7 @@
+Bai 1: array, tuple, string, dict, while/loop, try except, switch case.
+    + util for array, dict
+    + phan biet array <> arrayList.
+    + filter list<object> theo conditions ?
+Bai 2: string processing.
+    + reference: https://www.programiz.com/python-programming/methods/string/join
+    + regex ? advance.
