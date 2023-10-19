@@ -2,6 +2,9 @@ import comon.common as util
 def print_hi(name):
   print(f'Hi, {name}')
 
+def less_than(item):
+  return item < 50
+
 if __name__ == '__main__':
   print_hi('PyCharm')
 
@@ -80,5 +83,76 @@ if __name__ == '__main__':
   for x in mapPersonById:
     print("Key={}, Value={}".format(x, mapPersonById[x]))
 
-  # sleep, file handling, seperate function.
+  # string util
+  #[)
+  text = "Doan .pdfan com Toi.pdf"
+  text2 = "Doan an com Toi"
+  # lowcase
+  print(text.lower())
+  # uppercase
+  print(text.upper())
+  # substring
+  print(text[0:text.index(" ")])
+  # extension lastIndexOf
+  print(text[text.rindex(".") + 1 : len(text)])
+  # string -> array.
+  print(text2.split(" "))
+  # replace
+  print(text2.replace("Doan", "Khang"))
+  # contain
+  if('Doan' in text2):
+    print("Doan ne")
+  else:
+    print("Khang ne")
+  # check startWith, endWith
+  if(text.endswith(".pdf")):
+    print("Supported PDF Format")
+  else:
+    print("No support this file")
+
+  text3 = "2023-10-02_Document.pdf"
+  if(text3.startswith("2023")):
+    print("Process file in 2023")
+  else:
+    print("No support this file")
+
+  # join all items of list into single string by delimiter
+  print(" ".join(personList))
+
+  # array utils
+  array = [1, 2, 50, 10, 4]
+  # filter array
+  result = [x for x in array if x < 50]
+  print(result)
+  # add item into array
+  array.append(6)
+  print(array)
+  # insert between
+  array.insert(3, 18)
+  print(array)
+  # remove item by value
+  array.remove(50)
+  print(array)
+  # seperate array most like substring.
+  print(array[0:3])
+
+  # dict utils mapPersonById
+  # check constain.
+  if(mapPersonById.__contains__("12")):
+    print("Found key")
+  else:
+    print("Not Found")
+  # add key-value
+  mapPersonById['13'] = "Thuan"
+  # delete key
+  del mapPersonById['12']
+  #mapPersonById.__delitem__("12")
+  print(mapPersonById)
+  # add duplcate key.
+  mapPersonById['11'] = "Thang"
+  print(mapPersonById)
+
+
+
+
 

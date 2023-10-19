@@ -1,0 +1,21 @@
+Bai 1: array, tuple, string, dict, while/loop, try except, switch case.
+    + util for array, dict
+    + phan biet array <> arrayList.
+    + filter list<object> theo conditions ?
+
+Bai 2: string processing.
+    + reference: https://www.programiz.com/python-programming/methods/string/join
+    + regex ? advance.
+
+Bai 3: script python
+    + param when running script python
+    + file handling: read, delete, write-append, write-override.
+
+Bai 4: object
+    + call api.
+    + parse json, parse yaml
+
+bai 5: assignment.
+
+Bai 6: install local modules.
+    +
