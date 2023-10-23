@@ -1,3 +1,7 @@
+A [1,2,3]
+B [7,2,5,6]
+=> 2
+
 Bai 1: array, tuple, string, dict, while/loop, try except, switch case.
     + util for array, dict
     + phan biet array <> arrayList.
@@ -10,12 +14,17 @@ Bai 2: string processing.
 Bai 3: script python
     + param when running script python
     + file handling: read, delete, write-append, write-override.
+    + parse json, convert json to dict.
 
 Bai 4: object
-    + call api.
-    + parse json, parse yaml
+    + call api: get, post|put, delete
+    + parse yaml ?
 
-bai 5: assignment.
+Bai 5: assignment.
+    + produce shell script
+        1. step1.py
+        2. step2.py
+        3. step3.py
 
 Bai 6: install local modules.
     +

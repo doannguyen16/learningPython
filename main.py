@@ -1,4 +1,6 @@
 import comon.common as util
+import json
+
 def print_hi(name):
   print(f'Hi, {name}')
 
@@ -151,6 +153,24 @@ if __name__ == '__main__':
   # add duplcate key.
   mapPersonById['11'] = "Thang"
   print(mapPersonById)
+
+
+  # read file and parse json
+  f = open("./doc/example.json", "r")
+  # json string into dict
+  # call GET API.
+  response = json.loads(f.read())
+  listOfAction = response['menu']['popup']['menuitem']
+  response['menubar'] = "abc"
+  print("asdsad")
+
+  # convert dict to json String.
+  # call POST, PUT
+  requestBody = json.dumps(response)
+  print(requestBody)
+
+
+
 
 
 
