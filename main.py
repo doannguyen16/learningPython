@@ -1,5 +1,6 @@
 import comon.common as util
 import json
+import requests
 
 def print_hi(name):
   print(f'Hi, {name}')
@@ -168,6 +169,35 @@ if __name__ == '__main__':
   # call POST, PUT
   requestBody = json.dumps(response)
   print(requestBody)
+
+
+  # Bai 4:
+  # https://dummyjson.com/docs/products
+
+  # GET.
+  token = "1234535"
+  headers = {
+    'content-type': 'application/json',
+    'Authentication':'Bearer {}'.format(token)
+  }
+  response = requests.get('https://dummyjson.com/products', headers=headers)
+  print(response.text)
+  print(response.status_code)
+
+  # POST
+  payload = {'title': 'Khang bai 4'}
+  requestBody = json.dumps(payload)
+  # requests.put => call PUT api.
+  # requests.patch => call PATCH api.
+  response = requests.post('https://dummyjson.com/products/add', data=requestBody, headers=headers)
+  print(response.text)
+  print(response.status_code)
+
+  # DELETE
+  print("Testing DEL")
+  response = requests.delete('https://dummyjson.com/products/1', headers=headers)
+  print(response.text)
+  print(response.status_code)
 
 
 

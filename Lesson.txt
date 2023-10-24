@@ -17,14 +17,17 @@ Bai 3: script python
     + parse json, convert json to dict.
 
 Bai 4: object
-    + call api: get, post|put, delete
+    + call api: get|delete, post|put|patch
     + parse yaml ?
 
 Bai 5: assignment.
     + produce shell script
-        1. step1.py
-        2. step2.py
-        3. step3.py
+        1. step1.py => read file csv.
+        2. step2.py => use data csv to call API.
+        3. step3.py => store response into new csv.
 
-Bai 6: install local modules.
-    +
+Bai 6: regex
+
+
+Bai 7: install local modules.
+    + 
