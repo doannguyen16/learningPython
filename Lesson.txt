@@ -21,13 +21,26 @@ Bai 4: object
     + parse yaml ?
 
 Bai 5: assignment.
-    + produce shell script
-        1. step1.py => read file csv.
-        2. step2.py => use data csv to call API.
-        3. step3.py => store response into new csv.
+    + produce python script
+        1. pipeline.py => read file csv path via param
+            step1: read csv, processing line
+            step2: call api, status, response (Transaction API service)
+                pre-step: get token.(login: user/1111)
+                IF GET API => return status 'NOT FOUND'
+                    call POST API => create transaction
+                IF GET API => return status '200' and response.status = "PENDING"
+                    call PUT API => update transaction with status = "EXEC", return status, response
+                IF GET API => return status '200' and response.status = "COMPLETED"
+                    call DELETE API => delete transaction, return status, response
+                IF GET API => return status '200' and response.status = "WAITING_APPROVE"
+                    call PATCH API => approve transaction, return status, response
+            step3: log status, response into 'csv path' => new files.
+                "transaction_id", "context", "status", "response"
+                1, text, 200, {sadasdsa}
 
 Bai 6: regex
-
+    + matching
+    + extract.
 
 Bai 7: install local modules.
     + 

@@ -1,6 +1,7 @@
 import comon.common as util
 import json
 import requests
+import re
 
 def print_hi(name):
   print(f'Hi, {name}')
@@ -198,6 +199,23 @@ if __name__ == '__main__':
   response = requests.delete('https://dummyjson.com/products/1', headers=headers)
   print(response.text)
   print(response.status_code)
+
+  # Regex matching
+  # https://regex101.com/
+  text = "2023-02-01-data.csv"
+  text2 = "2023-02-01-data.json"
+  text3 = "2023-02-01-crm-2.pdf"
+  if(bool(re.match("^2023.*data.(csv|json)$", text3))):
+    print("Processing JSON/CSV Format")
+
+  # Regex extract
+  # (?i)^(\d{4}-\d{2}-\d{2})-data.*\.(.*)
+  extract = re.match("^(\d{4}-\d{2}-\d{2})-(.*)\.(.*)", text)
+  print(extract.groups()[0])
+  print(extract.groups()[1])
+  print(extract.groups()[2])
+
+
 
 
 
