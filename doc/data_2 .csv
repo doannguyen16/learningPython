@@ -1,0 +1,15 @@
+1,System do: ADD: add prod
+1,System do: ADD:++add prod
+2,System action: DELETE    : del data
+3,System exec: UpdaTe: ++ update prod
+4,System exec: Approve:
+5,System do: ADD:
+6,System action: DELETE:
+7,System exec: UpDate
+8,System exec: Approve:
+9,System do: AdD:
+10,System action: DELETE
+11,System exec: UpdatE:
+12,System run: ApProve:
+13, get prod: GET
+14, get prod: GET:

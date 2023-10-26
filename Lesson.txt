@@ -31,7 +31,7 @@ Bai 5: assignment.
                 UPDATE: call update txn
                 APPROVE: call approve txn
                 GET: call get data.
-            step3: log status, response into 'csv path' => new files.
+            step3: log status, response into 'csv path' => new files => data_*_result.csv
                 "transaction_id", "context", "status", "response"
                 1, text, 200, {sadasdsa}
 
