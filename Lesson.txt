@@ -26,6 +26,11 @@ Bai 5: assignment.
             step1: read csv, processing line
             step2: call api, status, response (Transaction API service)
                 pre-step: get token.(login: user/1111)
+                ADD: call api create Trx
+                DELETE: call api del txn
+                UPDATE: call update txn
+                APPROVE: call approve txn
+                GET: call get data.
             step3: log status, response into 'csv path' => new files.
                 "transaction_id", "context", "status", "response"
                 1, text, 200, {sadasdsa}
