@@ -9,7 +9,7 @@ Bai 1: array, tuple, string, dict, while/loop, try except, switch case.
 
 Bai 2: string processing.
     + reference: https://www.programiz.com/python-programming/methods/string/join
-    + regex ? advance.
+    + regex.
 
 Bai 3: script python
     + param when running script python
@@ -18,7 +18,7 @@ Bai 3: script python
 
 Bai 4: object
     + call api: get|delete, post|put|patch
-    + parse yaml ?
+    + parse yaml.
 
 Bai 5: assignment.
     + produce python script
@@ -39,7 +39,7 @@ Bai 6: regex
     + matching
     + extract.
 
+Bai 7: refactor to unit test, clean code.
+    +
 Bai 7: install local modules.
-    + 
-
-Bai 8: refactor to unit test.
+    +

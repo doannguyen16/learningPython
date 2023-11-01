@@ -1,7 +1,12 @@
 import comon.common as util
 import json
+import io
+import yaml
 import requests
 import re
+
+from oop.Person import Person
+
 
 def print_hi(name):
   print(f'Hi, {name}')
@@ -214,6 +219,42 @@ if __name__ == '__main__':
   print(extract.groups()[0])
   print(extract.groups()[1])
   print(extract.groups()[2])
+
+  data = {
+    'Name': 'John Doe',
+    'Position': 'DevOps Engineer',
+    'Location': 'England',
+    'Age': '26',
+    'Experience': {'GitHub': 'Software Engineer', \
+                   'Google': 'Technical Engineer', 'Linkedin': 'Data Analyst'},
+    'Languages': {'Markup': ['HTML'], 'Programming' \
+      : ['Python', 'JavaScript', 'Golang']}
+  }
+  # parse object to yaml text.
+  yaml_text = yaml.dump(data, sort_keys=False)
+  print(yaml_text)
+
+  # parse string to yaml object.
+  data_yaml = yaml.safe_load(io.StringIO(yaml_text))
+  print(data_yaml)
+
+  # read file yaml
+  with open("./doc/example.yaml") as stream:
+    try:
+      print(yaml.safe_load(stream))
+    except yaml.YAMLError as exc:
+      print(exc)
+
+  # init instance from class.
+  p = Person("Khang", 30)
+  print(p.showInfo())
+
+  p.eat()
+  p.walk()
+  p.work()
+
+
+
 
 
 
